@@ -3,6 +3,7 @@ html {
   font-family: "Anonymous Pro", monospace;
   word-wrap: break-word;
   font-weight: bold;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -45,6 +46,9 @@ td {
   padding: 10px;
 }
 
+tr {
+  font-weight: lighter;
+}
 tbody tr:nth-child(even) {
   background-color: #ebf6e5;
 }
