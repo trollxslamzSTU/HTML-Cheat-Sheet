@@ -80,7 +80,7 @@ nav {
   margin-top: 25px;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1150px) {
   nav {
     display: none;
   }
