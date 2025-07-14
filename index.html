@@ -33,7 +33,7 @@
         <ul class="buttons__css">
           <li><a href="#layout">Layout and Box model</a></li>
           <li><a href="#typography">Text and typography</a></li>
-          <li><a href="#background">Background and borders</a></li>
+          <li><a href="#background">Background</a></li>
           <li><a href="#flexbox">Flexbox (for layout)</a></li>
           <li><a href="#misc">Misc</a></li>
         </ul>
@@ -713,8 +713,8 @@
           <h1>CSS Cheat Sheet</h1>
           <section id="layout">
             <div>
-              <h2>Basics</h2>
-              <h3>HTML Tags</h3>
+              <h2>Layout and Box model</h2>
+              <h3>CSS attributes</h3>
               <table class="css">
                 <thead>
                   <tr>
@@ -724,44 +724,58 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>&lt;!DOCTYPE html&gt;</td>
-                    <td>Defines the document type</td>
+                    <td>display</td>
+                    <td>
+                      Specifies how a certain HTML element should be displayed
+                    </td>
                   </tr>
                   <tr>
-                    <td>&lt;html&gt;</td>
-                    <td>Defines an HTML document</td>
+                    <td>position</td>
+                    <td>
+                      Specifies the type of positioning method used for an
+                      element (static, relative, absolute or fixed)
+                    </td>
                   </tr>
                   <tr>
-                    <td>&lt;head&gt;</td>
-                    <td>Contains metadata/information for the document</td>
+                    <td>top, right, bottom, left</td>
+                    <td>Offset attributes for positioned elements</td>
                   </tr>
                   <tr>
-                    <td>&lt;title&gt;</td>
-                    <td>Defines a title for the document</td>
+                    <td>margin</td>
+                    <td>Sets all the margin properties in one declaration</td>
                   </tr>
                   <tr>
-                    <td>&lt;body&gt;</td>
-                    <td>Defines the document's body</td>
+                    <td>padding</td>
+                    <td>
+                      A shorthand property for all the padding-* properties
+                    </td>
                   </tr>
                   <tr>
-                    <td>&lt;h1&gt; to &lt;h6&gt;</td>
-                    <td>Defines HTML headings</td>
+                    <td>border</td>
+                    <td>
+                      A shorthand property for border-width, border-style and
+                      border-color
+                    </td>
                   </tr>
                   <tr>
-                    <td>&lt;p&gt;</td>
-                    <td>Defines a paragraph</td>
+                    <td>width, height</td>
+                    <td>Defines dimensions for an element</td>
                   </tr>
                   <tr>
-                    <td>&lt;br&gt;</td>
-                    <td>Inserts a single line break</td>
+                    <td>max-width, mix-width</td>
+                    <td>Sets horizontal sizing contraints for elements</td>
                   </tr>
                   <tr>
-                    <td>&lt;hr&gt;</td>
-                    <td>Defines a thematic change in the content</td>
+                    <td>max-height, mix-height</td>
+                    <td>Sets vertical sizing contraints for elements</td>
                   </tr>
                   <tr>
-                    <td>&lt;!--..--&gt;</td>
-                    <td>Defines a comment</td>
+                    <td>box-sizing</td>
+                    <td>
+                      Defines how the width and height of an element are
+                      calculated: should they include padding and borders, or
+                      not
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -770,7 +784,7 @@
           <section id="typography">
             <div>
               <h2>Formatting</h2>
-              <h3>HTML Tags</h3>
+              <h3>CSS attributes</h3>
               <table class="css">
                 <thead>
                   <tr>
@@ -780,44 +794,43 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>&lt;!DOCTYPE html&gt;</td>
-                    <td>Defines the document type</td>
+                    <td>font-family</td>
+                    <td>Specifies the font family for text</td>
                   </tr>
                   <tr>
-                    <td>&lt;html&gt;</td>
-                    <td>Defines an HTML document</td>
+                    <td>font-size</td>
+                    <td>Specifies the font size of text</td>
                   </tr>
                   <tr>
-                    <td>&lt;head&gt;</td>
-                    <td>Contains metadata/information for the document</td>
+                    <td>font-weight</td>
+                    <td>Specifies the weight of a font</td>
                   </tr>
                   <tr>
-                    <td>&lt;title&gt;</td>
-                    <td>Defines a title for the document</td>
+                    <td>color</td>
+                    <td>Sets the color of text</td>
                   </tr>
                   <tr>
-                    <td>&lt;body&gt;</td>
-                    <td>Defines the document's body</td>
+                    <td>text-align</td>
+                    <td>Specifies the horizontal alignment of text</td>
                   </tr>
                   <tr>
-                    <td>&lt;h1&gt; to &lt;h6&gt;</td>
-                    <td>Defines HTML headings</td>
+                    <td>line-height</td>
+                    <td>Sets the line height</td>
                   </tr>
                   <tr>
-                    <td>&lt;p&gt;</td>
-                    <td>Defines a paragraph</td>
+                    <td>letter-spacing</td>
+                    <td>
+                      Increases or decreases the space between characters in a
+                      text
+                    </td>
                   </tr>
                   <tr>
-                    <td>&lt;br&gt;</td>
-                    <td>Inserts a single line break</td>
+                    <td>text-decoration</td>
+                    <td>Specifies the decoration added to text</td>
                   </tr>
                   <tr>
-                    <td>&lt;hr&gt;</td>
-                    <td>Defines a thematic change in the content</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;!--..--&gt;</td>
-                    <td>Defines a comment</td>
+                    <td>text-transform</td>
+                    <td>Controls the capitalization of text</td>
                   </tr>
                 </tbody>
               </table>
@@ -825,8 +838,8 @@
           </section>
           <section id="background">
             <div>
-              <h2>Images</h2>
-              <h3>HTML Tags</h3>
+              <h2>Background</h2>
+              <h3>CSS attributes</h3>
               <table class="css">
                 <thead>
                   <tr>
@@ -836,44 +849,22 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>&lt;!DOCTYPE html&gt;</td>
-                    <td>Defines the document type</td>
+                    <td>background-color</td>
+                    <td>Specifies the background color of an element</td>
                   </tr>
                   <tr>
-                    <td>&lt;html&gt;</td>
-                    <td>Defines an HTML document</td>
+                    <td>background-image</td>
+                    <td>
+                      Specifies one or more background images for an element
+                    </td>
                   </tr>
                   <tr>
-                    <td>&lt;head&gt;</td>
-                    <td>Contains metadata/information for the document</td>
+                    <td>background-size</td>
+                    <td>Specifies the size of the background images</td>
                   </tr>
                   <tr>
-                    <td>&lt;title&gt;</td>
-                    <td>Defines a title for the document</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;body&gt;</td>
-                    <td>Defines the document's body</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;h1&gt; to &lt;h6&gt;</td>
-                    <td>Defines HTML headings</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;p&gt;</td>
-                    <td>Defines a paragraph</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;br&gt;</td>
-                    <td>Inserts a single line break</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;hr&gt;</td>
-                    <td>Defines a thematic change in the content</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;!--..--&gt;</td>
-                    <td>Defines a comment</td>
+                    <td>background-postion</td>
+                    <td>Specifies the position of a background image</td>
                   </tr>
                 </tbody>
               </table>
@@ -881,8 +872,8 @@
           </section>
           <section id="flexbox">
             <div>
-              <h2>Audio / Video</h2>
-              <h3>HTML Tags</h3>
+              <h2>Flexbox (for layout)</h2>
+              <h3>CSS attributes</h3>
               <table class="css">
                 <thead>
                   <tr>
@@ -892,44 +883,40 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>&lt;!DOCTYPE html&gt;</td>
-                    <td>Defines the document type</td>
+                    <td>display: flex</td>
+                    <td>Displays an element as a block-level flex container</td>
                   </tr>
                   <tr>
-                    <td>&lt;html&gt;</td>
-                    <td>Defines an HTML document</td>
+                    <td>flex-direction</td>
+                    <td>Specifies the direction of the flexible items</td>
                   </tr>
                   <tr>
-                    <td>&lt;head&gt;</td>
-                    <td>Contains metadata/information for the document</td>
+                    <td>justify-content</td>
+                    <td>
+                      Specifies the alignment between the items inside a
+                      flexible container when the items do not use all available
+                      space
+                    </td>
                   </tr>
                   <tr>
-                    <td>&lt;title&gt;</td>
-                    <td>Defines a title for the document</td>
+                    <td>align-items</td>
+                    <td>
+                      Specifies the alignment for items inside a flexible
+                      container
+                    </td>
                   </tr>
                   <tr>
-                    <td>&lt;body&gt;</td>
-                    <td>Defines the document's body</td>
+                    <td>flex-wrap</td>
+                    <td>
+                      Specifies whether the flexible items should wrap or not
+                    </td>
                   </tr>
                   <tr>
-                    <td>&lt;h1&gt; to &lt;h6&gt;</td>
-                    <td>Defines HTML headings</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;p&gt;</td>
-                    <td>Defines a paragraph</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;br&gt;</td>
-                    <td>Inserts a single line break</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;hr&gt;</td>
-                    <td>Defines a thematic change in the content</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;!--..--&gt;</td>
-                    <td>Defines a comment</td>
+                    <td>gap</td>
+                    <td>
+                      A shorthand property for the row-gap and the column-gap
+                      properties
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -937,8 +924,8 @@
           </section>
           <section id="misc">
             <div>
-              <h2>Programming</h2>
-              <h3>HTML Tags</h3>
+              <h2>Misc</h2>
+              <h3>CSS attributes</h3>
               <table class="css">
                 <thead>
                   <tr>
@@ -948,44 +935,51 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>&lt;!DOCTYPE html&gt;</td>
-                    <td>Defines the document type</td>
+                    <td>opacity</td>
+                    <td>Sets the opacity level for an element</td>
                   </tr>
                   <tr>
-                    <td>&lt;html&gt;</td>
-                    <td>Defines an HTML document</td>
+                    <td>overflow</td>
+                    <td>
+                      Specifies what happens if content overflows an element's
+                      box
+                    </td>
                   </tr>
                   <tr>
-                    <td>&lt;head&gt;</td>
-                    <td>Contains metadata/information for the document</td>
+                    <td>z-index</td>
+                    <td>Sets the stack order of a positioned element</td>
                   </tr>
                   <tr>
-                    <td>&lt;title&gt;</td>
-                    <td>Defines a title for the document</td>
+                    <td>visiblity</td>
+                    <td>Specifies whether or not an element is visible</td>
                   </tr>
                   <tr>
-                    <td>&lt;body&gt;</td>
-                    <td>Defines the document's body</td>
+                    <td>cursor</td>
+                    <td>
+                      Specifies the mouse cursor to be displayed when pointing
+                      over an element
+                    </td>
                   </tr>
                   <tr>
-                    <td>&lt;h1&gt; to &lt;h6&gt;</td>
-                    <td>Defines HTML headings</td>
+                    <td>transition</td>
+                    <td>
+                      A shorthand property for all the transition-* properties
+                    </td>
                   </tr>
                   <tr>
-                    <td>&lt;p&gt;</td>
-                    <td>Defines a paragraph</td>
+                    <td>transform</td>
+                    <td>Applies a 2D or 3D transformation to an element</td>
                   </tr>
                   <tr>
-                    <td>&lt;br&gt;</td>
-                    <td>Inserts a single line break</td>
+                    <td>box-shadow</td>
+                    <td>Attaches one or more shadows to an element</td>
                   </tr>
                   <tr>
-                    <td>&lt;hr&gt;</td>
-                    <td>Defines a thematic change in the content</td>
-                  </tr>
-                  <tr>
-                    <td>&lt;!--..--&gt;</td>
-                    <td>Defines a comment</td>
+                    <td>scroll-behavior</td>
+                    <td>
+                      Specifies whether to smoothly animate the scroll position
+                      in a scrollable box, instead of a straight jump
+                    </td>
                   </tr>
                 </tbody>
               </table>
